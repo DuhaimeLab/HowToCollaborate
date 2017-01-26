@@ -1,0 +1,7 @@
+#! /bin/bash
+
+echo Rendering now...
+
+pandoc -S ./manuscript.md -f markdown -t latex -o ./manuscript.pdf --highlight-style=tango
+
+echo Done
